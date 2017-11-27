@@ -1,4 +1,4 @@
-/* mAng - Quadrant and Radial Slice based fast angle approximation an pooling
+/* mAng - Quadrant and Radial Slice based fast angle approximation and pooling
 	by: Nathaniel D. Gibson
 */
 var mAng = {
