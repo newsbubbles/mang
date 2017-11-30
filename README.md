@@ -30,7 +30,7 @@ Velocity of n=2 table approximation with an AMD 1.8Ghz quad-core
 
 ## How it Works
 
-[[https://i.imgur.com/IJbQsBL.png|alt=diagram]]
+![diagram](https://i.imgur.com/IJbQsBL.png)
 
 mAng gives you an indexed output of 1 of possible 4 quadrants and 1 of possible 4 radial slices inside of that quadrant that your vector angle belongs to.  This is done by making an x/y square grid with a center of 0, and a lower bound of -2 and higher bound of 2 (can be called an n=2 grid), then tracing each point along the square's circumference clockwise from (-2, -2) to (-2, 2) to (2, 2) to (2, -2) and back to the beginning.  You will end up with the following x,y points from the graph below in that order.  For each point, calculate y/x and then calculate x/y.  Take the difference of y/x and x/y and we will call that S... so S = y/x - x/y.  Now if you look at this in a chart format, you will notice that S (or the difference of slope to inverse slope) follows a pattern which repeats exactly 4 times.
 
