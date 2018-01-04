@@ -59,7 +59,7 @@ In order to make mAng quick, I just took the S values from a n=2 grid and made t
 
 ## Better Resolution
 
-If you want finer angular slices, you would need to up the value of n.  I have n=2 hardcoded currently into the mAng library, but with a bit of work, it could be changed to be arbitrary.  A good example would be doing an n=3 grid to calculate the S barrier values. In the case of n=3, the values are +/-Infinity, 2.66, 0.833, 0, -0.833, -2.66.  This means that Each slice represents a 15 degree angular slice, since each quadrant has 6 slices instead of 4.  There will probably be a point where you do not want higher slice resolution because if you're using this for pooling in a histogram, you want each pool to be wide enough to catch enough points with the same q/r index.
+If you want finer angular slices, you would need to increase the value of n.  I have n=2 hardcoded currently into the mAng library, but with a bit of work, it could be changed to be arbitrary.  A good example would be doing an n=3 grid to calculate the S barrier values. In the case of n=3, the values are +/-Infinity, 2.66, 0.833, 0, -0.833, -2.66.  This means that Each slice represents a 15 degree angular slice, since each quadrant has 6 slices instead of 4.  There will probably be a point where you do not want higher slice resolution because if you're using this for pooling in a histogram, you want each pool to be wide enough to catch enough points with the same q/r index in a normalized way.
 
 ## Proof Test
 
